@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-03/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-01/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoIT advanced js homework 01</title>
-    <script type="module" crossorigin src="/goit-advancedjs-hw-03/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/index-DlHp-1EC.css">
+    <script type="module" crossorigin src="/goit-advancedjs-hw-01/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/vendor-DcHCnVjq.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/index-MR1tpYOZ.css">
   </head>
   <body>
     <header class="header">
@@ -24,7 +26,7 @@
 
     <main>
       <div class="container">
-        <h1 class="visually-hidden">Home</h1>
+        <h1 class="main-title visually-hidden">Home</h1>
         <form class="form">
           <label>
             <input
@@ -36,6 +38,12 @@
           </label>
           <button type="submit">Search</button>
         </form>
+        <div class="search-results">
+          <ul class="gallery"></ul>
+          <div class="loader-container">
+            <span class="loader"></span>
+          </div>
+        </div>
       </div>
     </main>
   </body>
