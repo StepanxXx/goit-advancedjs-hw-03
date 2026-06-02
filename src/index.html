@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoIT advanced js homework 01</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./main.js" defer></script>
   </head>
   <body>
-    <load src="./partials/header.html" highlight-home="active" />
+    <load
+      src="./partials/header.html"
+      icon-path="./img/sprite.svg#logo"
+      highlight-home="active"
+    />
 
     <main>
       <div class="container">
-        <h1 class="visually-hidden">Home</h1>
+        <h1 class="main-title visually-hidden">Home</h1>
         <form class="form">
           <label>
             <input
@@ -24,8 +29,13 @@
           </label>
           <button type="submit">Search</button>
         </form>
+        <div class="search-results">
+          <ul class="gallery"></ul>
+          <div class="loader-container">
+            <span class="loader"></span>
+          </div>
+        </div>
       </div>
     </main>
-    <script type="module" src="./main.js"></script>
   </body>
 </html>
